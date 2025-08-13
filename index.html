@@ -160,12 +160,13 @@
     max-height: 45px;
   }
             .carousel-item img {
-  height: 250px;
+ width: 100%;
+  height: auto; /* Biar ikut tinggi gambar */
   object-fit: cover;
 }
-@media (min-width: 768px) {
+@media (max-width: 576px) {
   .carousel-item img {
-    height: 500px;
+    max-height: 250px; /* Batasi tinggi di HP */
   }
 }
 
