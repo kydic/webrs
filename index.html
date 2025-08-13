@@ -157,15 +157,24 @@
           }
        
             
-  .carousel-item img {
- width: 100%;
-  height: auto; /* Biar ikut tinggi gambar */
-  object-fit: cover;
+  /* Carousel Responsive Fix */
+.carousel-item img {
+  width: 100%;
+  height: auto;          /* Sesuaikan tinggi otomatis */
+  object-fit: cover;     /* Potong gambar agar pas */
+  display: block;
 }
+
+/* Batasi tinggi di HP */
 @media (max-width: 576px) {
   .carousel-item img {
-    max-height: 250px; /* Batasi tinggi di HP */
+    max-height: 250px;   /* Tinggi maksimal carousel di HP */
   }
+}
+
+/* Pastikan container carousel tidak memaksa tinggi tertentu */
+.carousel-item {
+  height: auto !important;
 }
 
 }
