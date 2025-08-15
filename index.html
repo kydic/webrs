@@ -70,13 +70,13 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">Beranda</a></li>
+            <li><a href="#featured-services">Service</a></li>
             <li><a href="#about">Profil</a></li>
-            <li><a href="#services">Layanan</a></li>
-            <li><a href="#departments">Departments</a></li>
+            
             <li class="dropdown"><a href="#"><span>Dokter</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="jadok.php" class="stretched-link" target="_blank">Jadwal Dokter</a></li>
-                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="profil_dokter.php">Profil</a></li>
                 <li><a href="#">Dropdown 3</a></li>
                 <li><a href="#">Dropdown 4</a></li>
               </ul>
@@ -102,7 +102,7 @@
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
 
         <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" class="img-fluid w-100 object-fit: cover;">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="" class="img-fluid w-100">
 
         </div><!-- End Carousel Item -->
 
@@ -191,14 +191,21 @@ section {
 .carousel-item {
   height: auto !important;
 }
-
-}
-
-
           .service-item img {
             max-width: 100%;
             height: auto;
           }
+          @media (max-width: 576px) {
+  .logo img {
+    max-height: 45px;
+  }
+}
+@media (max-width: 576px) {
+  .logo img {
+    max-height: 45px;
+  }
+}
+
         </style>
         <div class="row">
           <div class="col-xl-4 col-md-6 col-lg-4">
@@ -465,13 +472,13 @@ section {
       <!-- Wa Pengaduan -->
 
       <!-- Call To Action Section -->
-      <section id="call-to-action" class="call-to-action section accent-background">
+      <!--<section id="call-to-action" class="call-to-action section accent-background">
 
         <div class="container">
           <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
             <div class="col-xl-10">
               <div class="text-center">
-                <h3>In an emergency? Need help now?</h3>
+                <h3>Dalam keadaan darurat? Butuh bantuan sekarang?</h3>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                   pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                   anim id est laborum.</p>
@@ -488,37 +495,35 @@ section {
 
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-          <h2>About Us<br></h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <h2>Profil<br></h2>
+          <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
         </div><!-- End Section Title -->
 
         <div class="container">
 
           <div class="row gy-4">
             <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/about.jpg" class="img-fluid" alt="">
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+              <img src="assets/img/rssurabaya.jpg" class="img-fluid" alt="">
+              <a href="https://www.youtube.com/watch?v=lKBhmX5G_tc" class="glightbox pulsating-play-btn"></a>
             </div>
             <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-              <p class="fst-italic">
+              <h3>Rs Kemenkes Surabaya</h3>
+              <!--<p class="fst-italic">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua.
-              </p>
+              </p> -->
               <ul>
-                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
+             <!--   <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.</span></li>
                 <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate
                     velit.</span></li>
                 <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                     aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
                     pariatur.</span></li>
-              </ul>
+              </ul> -->
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                Rumah Sakit Umum Pusat Surabaya adalah (RSUP Surabaya) adalah rumah sakit pemerintah milik Kementerian Kesehatan yang terletak di Surabaya, Indonesia yang menjadi rujukan untuk pengobatan bagi masyarakat Jawa Timur dan Indonesia bagian timur pada umumnya. Presiden Joko Widodo meresmikan Rumnena diharapkan mampu mengatasi tingginya tingkat kematian akibat penyakit stroke, serangan jantung, dan kanker, khususnya di Jawa Timur. Menurut Presiden, Jawa Timur menempati posisi ketiga setelah Yogyakarta dan Jawa Tengah dalam kasus penyakit ini.
               </p>
             </div>
           </div>
@@ -594,7 +599,7 @@ section {
                 style="max-width: 80%; height: auto; display: block; margin: 0 auto;">
             </div>
 
-            <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
               <h3>Kebaya Apps</h3>
               <p>
                 Adalah Aplikasi yang dipunyai oleh Rs Kemenkes Surabaya yang berfungsi sebagai aplikasi pelayanan secara
@@ -640,14 +645,14 @@ section {
       </section><!-- /Features Section -->
 
 
-      <!-- Services Section -->
+      <!-- Services Section 
       <section id="services" class="services section">
 
-        <!-- Section Title -->
+        <!-- Section Title 
         <div class="container section-title" data-aos="fade-up">
           <h2>Services</h2>
           <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
+        </div><!-- End Section Title 
 
         <div class="container">
 
@@ -664,7 +669,7 @@ section {
                 <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
                   perferendis tempore et consequatur.</p>
               </div>
-            </div><!-- End Service Item -->
+            </div><!-- End Service Item 
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="service-item position-relative">
@@ -677,7 +682,7 @@ section {
                 <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
                   nesciunt dolorem.</p>
               </div>
-            </div><!-- End Service Item -->
+            </div><!-- End Service Item 
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div class="service-item position-relative">
@@ -690,7 +695,7 @@ section {
                 <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
                   eos earum corrupti.</p>
               </div>
-            </div><!-- End Service Item -->
+            </div><!-- End Service Item 
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
               <div class="service-item position-relative">
@@ -704,7 +709,7 @@ section {
                   adipisci neque.</p>
                 <a href="#" class="stretched-link"></a>
               </div>
-            </div><!-- End Service Item -->
+            </div><!-- End Service Item 
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
               <div class="service-item position-relative">
@@ -718,7 +723,7 @@ section {
                   autem alias eius labore.</p>
                 <a href="#" class="stretched-link"></a>
               </div>
-            </div><!-- End Service Item -->
+            </div><!-- End Service Item 
 
             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
               <div class="service-item position-relative">
@@ -732,7 +737,7 @@ section {
                   recusandae ducimus enim.</p>
                 <a href="#" class="stretched-link"></a>
               </div>
-            </div><!-- End Service Item -->
+            </div><!-- End Service Item 
 
           </div>
 
@@ -801,14 +806,15 @@ section {
 
       </section><!-- /Appointment Section -->
 
-      <!-- Tabs Section -->
-      <section id="tabs" class="tabs section">
+      
+      <!-- Tabs Section
+     / <section id="tabs" class="tabs section">
 
-        <!-- Section Title -->
+        <!-- Section Title 
         <div class="container section-title" data-aos="fade-up">
           <h2>Departments</h2>
           <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
+        </div><!-- End Section Title 
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -914,16 +920,17 @@ section {
 
         </div>
 
-      </section><!-- /Tabs Section -->
+      </section> /Tabs Section -->
+    
 
-      <!-- Testimonials Section -->
+      <!-- Testimonials Section 
       <section id="testimonials" class="testimonials section">
 
-        <!-- Section Title -->
+        <!-- Section Title 
         <div class="container section-title" data-aos="fade-up">
           <h2>Testimonials</h2>
           <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
+        </div><!-- End Section Title 
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -968,7 +975,7 @@ section {
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                 </div>
-              </div><!-- End testimonial item -->
+              </div><!-- End testimonial item 
 
               <div class="swiper-slide">
                 <div class="testimonial-item">
@@ -982,7 +989,7 @@ section {
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                 </div>
-              </div><!-- End testimonial item -->
+              </div><!-- End testimonial item 
 
               <div class="swiper-slide">
                 <div class="testimonial-item">
@@ -996,7 +1003,7 @@ section {
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                 </div>
-              </div><!-- End testimonial item -->
+              </div><!-- End testimonial item 
 
               <div class="swiper-slide">
                 <div class="testimonial-item">
@@ -1010,7 +1017,7 @@ section {
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                 </div>
-              </div><!-- End testimonial item -->
+              </div><!-- End testimonial item 
 
               <div class="swiper-slide">
                 <div class="testimonial-item">
@@ -1024,15 +1031,14 @@ section {
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                 </div>
-              </div><!-- End testimonial item -->
-
+              </div><!-- End testimonial item 
             </div>
             <div class="swiper-pagination"></div>
           </div>
 
         </div>
 
-      </section><!-- /Testimonials Section -->
+      </section> /Testimonials Section -->
 
       <!-- Doctors Section -->
       <section id="doctors" class="doctors section light-background">
@@ -1040,7 +1046,7 @@ section {
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Doctors</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          <p></p>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -1200,14 +1206,14 @@ section {
 
       </section><!-- /Gallery Section -->
 
-      <!-- Pricing Section -->
+      <!-- Pricing Section 
       <section id="pricing" class="pricing section">
 
-        <!-- Section Title -->
+        <!-- Section Title 
         <div class="container section-title" data-aos="fade-up">
           <h2>Pricing</h2>
           <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
+        </div><!-- End Section Title -
 
         <div class="container">
 
@@ -1228,7 +1234,7 @@ section {
                   <a href="#" class="btn-buy">Buy Now</a>
                 </div>
               </div>
-            </div><!-- End Pricing Item -->
+            </div><!-- End Pricing Item 
 
             <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
               <div class="pricing-item featured">
@@ -1245,7 +1251,7 @@ section {
                   <a href="#" class="btn-buy">Buy Now</a>
                 </div>
               </div>
-            </div><!-- End Pricing Item -->
+            </div><!-- End Pricing Item 
 
             <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
               <div class="pricing-item">
@@ -1262,7 +1268,7 @@ section {
                   <a href="#" class="btn-buy">Buy Now</a>
                 </div>
               </div>
-            </div><!-- End Pricing Item -->
+            </div><!-- End Pricing Item 
 
             <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
               <div class="pricing-item">
@@ -1288,14 +1294,14 @@ section {
 
       </section><!-- /Pricing Section -->
 
-      <!-- Faq Section -->
+      <!-- Faq Section 
       <section id="faq" class="faq section light-background">
 
-        <!-- Section Title -->
+        <!-- Section Title 
         <div class="container section-title" data-aos="fade-up">
           <h2>Frequently Asked Questions</h2>
           <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-        </div><!-- End Section Title -->
+        </div><!-- End Section Title 
 
         <div class="container">
 
@@ -1312,7 +1318,7 @@ section {
                       gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
+                </div><!-- End Faq item-
 
                 <div class="faq-item">
                   <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
@@ -1323,7 +1329,7 @@ section {
                       dui.</p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
+                </div><!-- End Faq item-
 
                 <div class="faq-item">
                   <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
@@ -1334,7 +1340,7 @@ section {
                       sed odio morbi quis</p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
+                </div><!-- End Faq item-
 
                 <div class="faq-item">
                   <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
@@ -1345,7 +1351,7 @@ section {
                       dui.</p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
+                </div><!-- End Faq item-
 
                 <div class="faq-item">
                   <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
@@ -1355,7 +1361,7 @@ section {
                       Purus gravida quis blandit turpis cursus in</p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
-                </div><!-- End Faq item-->
+                </div><!-- End Faq item-
 
                 <div class="faq-item">
                   <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
@@ -1376,22 +1382,22 @@ section {
 
       </section><!-- /Faq Section -->
 
-      <!-- Contact Section -->
+      <!-- Contact Section -
       <section id="contact" class="contact section">
 
-        <!-- Section Title -->
+        <!-- Section Title 
         <div class="container section-title" data-aos="fade-up">
           <h2>Contact</h2>
           <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
         </div><!-- End Section Title -->
 
-        <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
           <iframe style="border:0; width: 100%; height: 370px;"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            src="https://maps.app.goo.gl/gLKToSJc4usfJndC8"
             frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+       <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
 
           <div class="row gy-4">
             <div class="col-lg-6 ">
@@ -1404,7 +1410,7 @@ section {
                     <h3>Address</h3>
                     <p>A108 Adam Street, New York, NY 535022</p>
                   </div>
-                </div><!-- End Info Item -->
+                </div><!-- End Info Item -
 
                 <div class="col-md-6">
                   <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
@@ -1413,7 +1419,7 @@ section {
                     <h3>Call Us</h3>
                     <p>+1 5589 55488 55</p>
                   </div>
-                </div><!-- End Info Item -->
+                </div><!-- End Info Item --
 
                 <div class="col-md-6">
                   <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
@@ -1422,7 +1428,7 @@ section {
                     <h3>Email Us</h3>
                     <p>info@example.com</p>
                   </div>
-                </div><!-- End Info Item -->
+                </div><!-- End Info Item --
 
               </div>
             </div>
